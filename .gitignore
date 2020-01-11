@@ -1,7 +1,5 @@
 
 # Build
-erl*.dump
-*.beam
 out
 
 
