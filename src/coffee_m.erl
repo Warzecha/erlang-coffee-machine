@@ -18,12 +18,10 @@ idle_machine() ->
     {SenderPID, order, Coffee} ->
       hardware:receive_order(Coffee),
       Price = maps:get(Coffee, CoffeePrices),
-%%      SenderPID ! {pay, Price},
       wait_for_payment(SenderPID, Price, Coffee);
     {SenderPID, order_by_number, CoffeeNumber} ->
       {Coffee, Price} = lists:nth(CoffeeNumber, AvailableCoffees),
       hardware:receive_order(Coffee),
-%%      SenderPID ! {pay, Price},
       wait_for_payment(SenderPID, Price, Coffee)
   end.
 
