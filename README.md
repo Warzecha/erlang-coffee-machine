@@ -19,7 +19,7 @@ The vending machine is capable of brewing coffee directly before serving it to c
 ## Implementation
 The coffee machine is implemented as a *Final State Machine*
 
-[fsm_diagram](https://github.com/Warzecha/erlang-coffee-machine/blob/master/img/fsm_diagram.png?raw=true)
+![fsm_diagram](https://raw.githubusercontent.com/Warzecha/erlang-coffee-machine/blob/master/img/fsm_diagram.png)
 
 There are 2 modes:
 - automatic
