@@ -1,0 +1,10 @@
+
+# Build
+erl*.dump
+*.beam
+out
+
+
+# IntelliJ
+.idea
+*.iml
